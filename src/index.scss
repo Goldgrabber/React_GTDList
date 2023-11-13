@@ -28,29 +28,5 @@ body {
     height: 100%;
     padding: 60px 20px;
   }
-  &__list {
-    li {
-      display: flex;
-      align-items: center;  
-      cursor: pointer;
-      padding: 10px 12px;
-      margin: 5px;
-    }
-    &.active {
-      background: #ffffff;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.04);
-      border-radius: 4px;
-    }
-    i {
-      display: inline-flex;
-      margin-right: 10px;
-      svg {
-        path {
-          fill: #7c7c7c;
-        }
-      /*  opacity: 0.60; */
-      }
-    }
-    
-  }
+
 }
