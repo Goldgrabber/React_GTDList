@@ -4,9 +4,6 @@
   padding: 0;
   list-style: none;
   outline: none;
-}
-
-body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -25,7 +22,7 @@ body {
   &__sidebar {
     background-color: #f4f6f8;
     width: 200px;
-    height: 100%;
+    height: calc(100% - 120px);
     padding: 60px 20px;
   }
 
