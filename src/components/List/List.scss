@@ -1,11 +1,17 @@
-.list {
+.List {
     margin-bottom: 30px;
 
     &__add-button {
-      path {
-        stroke:#868686;
+       svg {
+          path {
+          stroke:#868686;
+          }
+        }
+      span {
+        color: #767676;
       }
     }
+
 
     li {
       display: flex;

@@ -1,13 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './List.scss'
+import './List.scss';
 
 const List = ({ items,  }) => {
     return (    
-    <ul className="list">
+    <ul className="List">
       {items.map( (item, index) => (
-        <li key={index} className={item.active ? 'active': ''}>
+        <li key={index} className={classNames(item.className, {'active': item.active})}>
           <i> 
             {item.icon ? ( 
             item.icon
