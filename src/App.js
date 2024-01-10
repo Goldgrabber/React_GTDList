@@ -3,6 +3,7 @@ import { useState } from 'react';
 import List from './components/List';
 import AddListButton from './components/AddListButton';
 
+import DB from '../src/assets/db.json';
 
 function App() {
   let [value, setValue] = useState('Hello, World!');
@@ -39,7 +40,7 @@ function App() {
       isRemovable
       />
 
-      <AddListButton/>
+      <AddListButton colors= {DB.colors}/>
 
     </div>
     <div className="todo__TASKS">
