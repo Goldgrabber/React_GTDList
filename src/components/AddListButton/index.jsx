@@ -28,11 +28,11 @@ const AddListButton = ({ colors }) => {
           <div className='add-list__popup'>
               <input className='field' type="text" placeholder='Название списка' />
               <div className="add-list__popup-colors">
-                <ul>
-                    <li><Badge color="green" /> </li>
-                    <li>2</li>
-                </ul>
-                </div>            
+                    {
+                        colors.map(color => (
+                            <Badge color={color.name} /> )
+                        )}
+              </div>            
               <button className='button'>Добавить</button>
           </div>}
       </div>
